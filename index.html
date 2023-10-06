@@ -20,7 +20,8 @@
 </head>
 
 <body class="stackedit">
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+   <div id="navbar-placeholder"></div>
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-dark">
             <nav class="navbar navbar-dark bg-dark">
 
                 <a class="navbar-brand" href="#"><img src="IMAGES/bi.png" alt="" height="50" width="50"/></a>
@@ -33,7 +34,7 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
                         </li>
-                        <!--CONSULTAS INFO-->
+                        <!--CONSULTAS INFO
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                                 Consultas Información
@@ -41,10 +42,10 @@
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="Manuales/Consultas-Informacion.html"><h2>Ver Manuales</h2></a>
                                 <!--<div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="mantenimientoUsuario.jsp">Mantenimiento Usuarios</a>-->
+                                <a class="dropdown-item" href="mantenimientoUsuario.jsp">Mantenimiento Usuarios</a>
                             </div>
                         </li>
-                        <!--GUATEMALA-->
+                        <!--GUATEMALA
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                                 Guatemala
@@ -52,9 +53,10 @@
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="Manuales/GT/Guatemala-menu.html"><h2>Menú</h2></a>
                                 <!--<div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="mantenimientoEmpleado.jsp"><h5>Alertas<h5></a>-->
+                                <a class="dropdown-item" href="mantenimientoEmpleado.jsp"><h5>Alertas<h5></a>
                             </div>
                         </li>
+  
                         <!--EMERSON
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
@@ -132,7 +134,7 @@
                         </li>
                     </ul>
                     <a margin-left="35px" href="login.jsp?cerrar=true" button type="button" class="btn btn-danger">Cerrar Sesión</a>
-                  -->
+                  
                 </div>
             </nav>
         </nav>    
@@ -159,6 +161,12 @@
 </tbody>
 </table>
   -->
+
+<script>
+    $(function () {
+        $("#navbar-placeholder").load("navbar.html");
+    });
+</script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
