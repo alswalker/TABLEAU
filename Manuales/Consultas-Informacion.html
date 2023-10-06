@@ -14,9 +14,19 @@
 </head>
 
 <body class="stackedit">
-    <!--NAVBAR-->
-  <object data="navbar.html" type="text/html" style="height: 500px; width: 100%;">
-  </object>
+   <!-- NAVBAR -->
+  <div id="navbar-placeholder"></div>
+  <script>
+    // Código JavaScript para cargar la barra de navegación
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "navbar.html", true);
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState == 4 && xhr.status == 200) {
+        document.getElementById("navbar-placeholder").innerHTML = xhr.responseText;
+      }
+    };
+    xhr.send();
+  </script>
 
   <div class="stackedit__html"><center> <h1>Consulta de información cargada</h1></center>
 <ul>
