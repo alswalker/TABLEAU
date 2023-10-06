@@ -22,7 +22,6 @@
 
   <br></br>
   <div class="stackedit__html"><center> <h1>Alertas</h1></center>
-  
 <ul>
 <li>
 <p>Ingresar al Módulo Alertas<br>
@@ -79,9 +78,10 @@
 <blockquote>
   <center><h5>© Francisco Cordón - 2023</h5></center> 
 </blockquote>
-      <script>
+</div>
+        <script>
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "navbar.html", true);
+    xhr.open("GET", "../../navbar.html", true);
     xhr.onreadystatechange = function () {
       if (xhr.readyState == 4 && xhr.status == 200) {
         document.getElementById("navbar-placeholder").innerHTML = xhr.responseText;
@@ -89,6 +89,5 @@
     };
     xhr.send();
   </script>
-</div>
 </body>
 </html>
