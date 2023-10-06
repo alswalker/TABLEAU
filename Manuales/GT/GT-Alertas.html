@@ -15,9 +15,8 @@
 
 <body class="stackedit">
   <div class="stackedit__html"><center> <h1>Alertas</h1></center>
-        <!--NAVBAR-->
-  <object data="navbar.html" type="text/html" style="height: 500px; width: 100%;">
-  </object>
+   <!-- NAVBAR -->
+  <div id="navbar-placeholder"></div>
 <ul>
 <li>
 <p>Ingresar al Módulo Alertas<br>
@@ -75,6 +74,17 @@
   <center><h5>© Francisco Cordón - 2023</h5></center> 
 </blockquote>
 </div>
+   <script>
+    // Código JavaScript para cargar la barra de navegación
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "navbar.html", true);
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState == 4 && xhr.status == 200) {
+        document.getElementById("navbar-placeholder").innerHTML = xhr.responseText;
+      }
+    };
+    xhr.send();
+  </script>
 </body>
 
 </html>
