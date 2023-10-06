@@ -15,21 +15,29 @@
   margin: 0 auto;
  }</style>
   <link rel="icon"  href="IMAGES/favicon.ico" type="image/x-icon">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 </head>
 
 <body class="stackedit">
   <!--NAVBAR-->
-  <object data="navbar.html" type="text/html" style="height: 500px; width: 100%;">
-  </object>
+  <div id="navbar-placeholder"></div>
+
   
   <!--<div class="stackedit__html"><center><h2>Manuales de Actualización de Datos</h2> </center>
   <br></br>-->
-  <p><img src="IMAGES/tableau.png" alt="" class="center-image"></p>
+  <div id="content">
+      <p><img src="IMAGES/tableau.png" alt="" class="center-image"></p>
+  </div>
+  
   <!--<br></br>
       
   <blockquote>
     <center><h5>© Francisco Cordón - 2023</h5></center> 
   </blockquote>-->
-    
+  <script>
+      $(function () {
+        $("#navbar-placeholder").load("navbar.html");
+      });
+    </script>  
 </body>
 </html>
