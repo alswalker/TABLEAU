@@ -7,15 +7,18 @@
   <title>Manuales Tableau</title>
   <link rel="stylesheet" href="https://stackedit.io/style.css" />
   <style>
+    .center-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
     .center-image {
       display: block;
       margin: 0 auto;
-    }
-  </style>
-
-  <style>
-    .center-table {
-      margin: 0 auto;
+      max-width: 100%; /* Hace que la imagen sea adaptable */
+      height: auto;    /* Mantiene la proporción de aspecto */
     }
   </style>
   <link rel="icon" href="IMAGES/favicon.ico" type="image/x-icon">
@@ -26,22 +29,25 @@
   <!-- NAVBAR -->
   <div id="navbar-placeholder"></div>
 
-<div class="position-relative text-center">
-  <div class="position-absolute top-50 start-50 translate-middle">
-    <img src="IMAGES/tableau.png" alt="" style="width: 300px; height: 100px;" class="mx-auto">
+  <div class="center-content">
+    <!-- Contenido centrado -->
+    <div class="position-relative text-center">
+      <div class="position-absolute top-50 start-50 translate-middle">
+        <img src="IMAGES/tableau.png" alt="" style="width: 300px;" class="mx-auto center-image">
+      </div>
+      <div class="position-absolute bottom-0 start-50 translate-middle-x">
+        <blockquote>
+          <h5>© Francisco Cordón - 2023</h5>
+        </blockquote>
+      </div>
+    </div>
   </div>
-  <div class="position-absolute bottom-0 start-50 translate-middle-x">
-    <blockquote>
-      <h5>© Francisco Cordón - 2023</h5>
-    </blockquote>
-  </div>
-</div>
   
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   
-    <script>
+  <script>
     // Código JavaScript para cargar la barra de navegación
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "navbarvista.html", true);
