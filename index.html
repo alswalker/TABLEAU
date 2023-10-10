@@ -7,16 +7,16 @@
   <title>Manuales Tableau</title>
   <link rel="stylesheet" href="https://stackedit.io/style.css" />
   <style>
-    .center-content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
     }
 
     .center-image {
-      display: block;
-      margin: 0 auto;
       max-width: 100%; /* Hace que la imagen sea adaptable */
       height: auto;    /* Mantiene la proporción de aspecto */
     }
@@ -29,17 +29,15 @@
   <!-- NAVBAR -->
   <div id="navbar-placeholder"></div>
 
-  <div class="center-content">
-    <!-- Contenido centrado -->
-    <div class="position-relative text-center">
-      <div class="position-absolute top-50 start-50 translate-middle">
-        <img src="IMAGES/tableau.png" alt="" style="width: 300px;" class="mx-auto center-image">
-      </div>
-      <div class="position-absolute bottom-0 start-50 translate-middle-x">
-        <blockquote>
-          <h5>© Francisco Cordón - 2023</h5>
-        </blockquote>
-      </div>
+  <!-- Contenido centrado -->
+  <div class="position-relative text-center">
+    <div class="position-absolute top-50 start-50 translate-middle">
+      <img src="IMAGES/tableau.png" alt="" style="width: 300px;" class="mx-auto center-image">
+    </div>
+    <div class="position-absolute bottom-0 start-50 translate-middle-x">
+      <blockquote>
+        <h5>© Francisco Cordón - 2023</h5>
+      </blockquote>
     </div>
   </div>
   
